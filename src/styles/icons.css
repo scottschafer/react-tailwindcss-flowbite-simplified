@@ -1,0 +1,91 @@
+/* Icon classes using pseudo-elements */
+.icon-help::before,
+.icon-delete::before,
+.icon-add::before,
+.icon-edit::before,
+.icon-search::before,
+.icon-info::before,
+.icon-warning::before,
+.icon-success::before,
+.icon-error::before {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-family: 'Font Awesome 5 Free', sans-serif; /* Assumes Font Awesome is available */
+  font-weight: 900;
+  vertical-align: middle;
+}
+
+/* Individual icon definitions */
+.icon-help::before {
+  content: "\f059"; /* question-circle icon */
+  color: #4a86e8;
+}
+
+.icon-delete::before {
+  content: "\f2ed"; /* trash-alt icon */
+  color: #e74c3c;
+}
+
+.icon-add::before {
+  content: "\f067"; /* plus icon */
+  color: #2ecc71;
+}
+
+.icon-edit::before {
+  content: "\f044"; /* edit icon */
+  color: #f39c12;
+}
+
+.icon-search::before {
+  content: "\f002"; /* search icon */
+  color: #7f8c8d;
+}
+
+.icon-info::before {
+  content: "\f05a"; /* info-circle icon */
+  color: #3498db;
+}
+
+.icon-warning::before {
+  content: "\f071"; /* exclamation-triangle icon */
+  color: #f1c40f;
+}
+
+.icon-success::before {
+  content: "\f00c"; /* check icon */
+  color: #27ae60;
+}
+
+.icon-error::before {
+  content: "\f00d"; /* times icon */
+  color: #c0392b;
+}
+
+/* Alternative implementation using Material Icons */
+/*
+.icon-material::before {
+  font-family: 'Material Icons', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.2em;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+.icon-help-material::before {
+  content: "help";
+  color: #4a86e8;
+}
+
+.icon-delete-material::before {
+  content: "delete";
+  color: #e74c3c;
+}
+*/

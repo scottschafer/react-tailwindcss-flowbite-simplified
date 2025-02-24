@@ -1,0 +1,35 @@
+html button {
+  @apply text-black p-2 rounded outline outline-1 outline-black transition-all duration-300;
+  @apply dark:text-white dark:outline-white;
+}
+
+button.lg {
+  @apply p-4 text-[125%];    
+}
+
+button.sm {
+  @apply px-3 py-1 text-[80%];
+}
+
+button:hover {
+  @apply bg-gray-200;
+  @apply dark:bg-gray-700;
+}
+
+button.primary {
+  @apply bg-blue-500 text-white;
+  @apply dark:bg-blue-600;
+}
+
+button.primary:hover {
+  @apply bg-blue-600 dark:bg-blue-700;
+}
+
+button.warning {
+  @apply text-red-800 outline-red-400;
+  @apply dark:text-red-400 dark:outline-red-400;
+}
+
+button.text {
+  @apply outline-0;
+}

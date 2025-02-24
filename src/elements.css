@@ -1,13 +1,12 @@
-/* @import '@fortawesome/fontawesome-free/css/all.min.css'; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import './styles/elements/body.css';
-@import './styles/elements/button.css';
-@import './styles/elements/label.css';
-@import './styles/elements/legend.css';
-@import './styles/icons.css';
+@layer base {
+  @import './elements/body.css';
+  @import './elements/button.css';
+  @import './elements/label.css';
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
