@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-tailwindcss-flowbite-simplified/static/css/main.4dc4fc3f.css",
+    "main.js": "/react-tailwindcss-flowbite-simplified/static/js/main.404b7d33.js",
+    "static/js/453.f351aece.chunk.js": "/react-tailwindcss-flowbite-simplified/static/js/453.f351aece.chunk.js",
+    "index.html": "/react-tailwindcss-flowbite-simplified/index.html",
+    "main.4dc4fc3f.css.map": "/react-tailwindcss-flowbite-simplified/static/css/main.4dc4fc3f.css.map",
+    "main.404b7d33.js.map": "/react-tailwindcss-flowbite-simplified/static/js/main.404b7d33.js.map",
+    "453.f351aece.chunk.js.map": "/react-tailwindcss-flowbite-simplified/static/js/453.f351aece.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4dc4fc3f.css",
+    "static/js/main.404b7d33.js"
+  ]
+}
