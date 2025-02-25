@@ -1,0 +1,10 @@
+
+.shadow-xs {
+
+}
+.tooltip-tw {
+  @apply absolute z-10 inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 rounded-lg shadow-xs absolute z-10 inline-block px-3 py-2 text-sm font-medium transition-opacity duration-300 rounded-lg shadow-xs;
+  
+  @apply text-black bg-gray-200 outline-black outline-1;
+  @apply dark:text-white dark:bg-gray-900;
+}

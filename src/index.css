@@ -7,6 +7,7 @@
 @import './styles/elements/button.css';
 @import './styles/elements/label.css';
 @import './styles/elements/legend.css';
+@import './styles/elements/tooltip.css';
 @import './styles/icons.css';
 
 code {
