@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-tailwindcss-flowbite-simplified/static/css/main.aaa92319.css",
-    "main.js": "/react-tailwindcss-flowbite-simplified/static/js/main.e04384af.js",
+    "main.css": "/react-tailwindcss-flowbite-simplified/static/css/main.342951d7.css",
+    "main.js": "/react-tailwindcss-flowbite-simplified/static/js/main.ceda88c2.js",
     "static/js/453.f351aece.chunk.js": "/react-tailwindcss-flowbite-simplified/static/js/453.f351aece.chunk.js",
     "index.html": "/react-tailwindcss-flowbite-simplified/index.html",
-    "main.aaa92319.css.map": "/react-tailwindcss-flowbite-simplified/static/css/main.aaa92319.css.map",
-    "main.e04384af.js.map": "/react-tailwindcss-flowbite-simplified/static/js/main.e04384af.js.map",
+    "main.342951d7.css.map": "/react-tailwindcss-flowbite-simplified/static/css/main.342951d7.css.map",
+    "main.ceda88c2.js.map": "/react-tailwindcss-flowbite-simplified/static/js/main.ceda88c2.js.map",
     "453.f351aece.chunk.js.map": "/react-tailwindcss-flowbite-simplified/static/js/453.f351aece.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaa92319.css",
-    "static/js/main.e04384af.js"
+    "static/css/main.342951d7.css",
+    "static/js/main.ceda88c2.js"
   ]
 }
