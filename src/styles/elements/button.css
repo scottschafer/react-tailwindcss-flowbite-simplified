@@ -1,6 +1,7 @@
 html button {
-  @apply text-black p-2 rounded outline outline-1 outline-black transition-all duration-300;
+  @apply text-black p-2 rounded outline outline-2 outline-blue-400 transition-all duration-300;
   @apply dark:text-white dark:outline-white;
+  text-transform: uppercase
 }
 
 button.lg {

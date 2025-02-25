@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 import './App.css';
 import { initFlowbiteHelper } from './flowbiteHelper';
 import 'flowbite';
-
+import { initPopovers, initTooltips } from 'flowbite';
 
 function App() {
 
-  initFlowbiteHelper()
+  initFlowbiteHelper();
+
   // dark mode toggle
   const [darkMode, setDarkMode] = useState(true);
 
@@ -39,13 +40,14 @@ function App() {
           <button className="sm" onClick={toggleDarkMode}>{darkMode ? 'Light' : 'Dark'}</button>
         </div>
 
+
         {
           ['', 'sm', 'lg'].map(size => (
             <div className="stack-v gap-md w-full items-center" key={`size-${size}`}>
               <label>Buttons {size ? `(${size})` : ''}</label>
               <div className="stack-h gap-md">
-                <button title="tooltip" className={`primary ${size}`}>primary</button>
-                <button className={`secondary ${size}`}>secondary</button>
+                <button title="Primary Button!" data-tooltip-placement="left" className={`primary ${size}`}>primary</button>
+                <button title="Secondary Button!" data-tooltip-placement="right" className={`secondary ${size}`}>secondary</button>
                 <button className={`text ${size}`}>text</button>
                 <button className={`warning icon-error ${size}`}>warning</button>
               </div>
