@@ -6,6 +6,7 @@
   @import './elements/body.css';
   @import './elements/button.css';
   @import './elements/label.css';
+  @import './elements/a.css';
 }
 
 code {

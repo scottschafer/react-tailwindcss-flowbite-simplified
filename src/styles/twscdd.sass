@@ -1,0 +1,23 @@
+.twscdd
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // Make the element fill vertical space
+  min-height: 100vh  // Use viewport height
+  display: flex
+  flex-direction: column
+
+  @apply bg-white dark:bg-black;
+
+  label, section, p, h1, h2, h3, h4, h5, h6, a
+    @apply text-black dark:text-white;
+
+.twscdd-elements
+  @import './elements/button.sass'
+  @import './elements/label.css'
+  @import './elements/legend.css'
+  @import './elements/tooltip.css'
+  @import './elements/body.css'
+  @import './elements/a.css'

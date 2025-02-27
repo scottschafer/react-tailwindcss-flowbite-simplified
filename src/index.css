@@ -1,4 +1,4 @@
-/* @import '@fortawesome/fontawesome-free/css/all.min.css'; */
+/* @import '@fortawesome/fontawesome-free/css/all.min.css';
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,47 +8,4 @@
 @import './styles/elements/label.css';
 @import './styles/elements/legend.css';
 @import './styles/elements/tooltip.css';
-@import './styles/icons.css';
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-/**
-  buttons
-*/
-
-/**
-  layout
-*/
-
-.gap-md {
-  @apply gap-2;
-}
-
-.gap-lg {
-  @apply gap-4;
-}
-
-
-.p-md {
-  @apply p-2;
-}
-
-.p-lg {
-  @apply p-4;
-}
-
-.stack-v {
-  @apply flex flex-col;
-}
-
-.stack-h {
-  @apply flex flex-row;
-}
-/* 
-button {
-  @apply text-black p-2 rounded outline outline-1 outline-black transition-all duration-300;
-  @apply dark:text-white dark:outline-white;
-} */
+@import './styles/icons.css'; */

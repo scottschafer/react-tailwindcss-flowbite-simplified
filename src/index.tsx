@@ -1,6 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './index2.sass';
+import './styles/layout.sass';
+import './styles/layout.sass';
+import './styles/icons.css';
+
 // import './elements.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

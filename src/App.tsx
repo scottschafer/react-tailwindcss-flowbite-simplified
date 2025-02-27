@@ -1,8 +1,16 @@
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import './App.css';
 import { initFlowbiteHelper } from './flowbiteHelper';
 import 'flowbite';
 import { initPopovers, initTooltips } from 'flowbite';
+
+// Page components
+import MUIPage from './pages/MUIPage';
+import FlowbiteHTMLPage from './pages/FlowbiteHTMLPage';
+import FlowbiteReactPage from './pages/FlowbiteReactPage';
+import Contact from './pages/Contact';
+import { NavLinks } from './components/Navlinks';
 
 function App() {
 
@@ -30,33 +38,42 @@ function App() {
   };
 
   return (
-    <div className="App flex p-lg">
+    <div>
 
-      <div className="stack-v gap-lg w-full">
+    <Router>
+      <div className="App flex flex-col p-lg">
+        
+        {/* Navigation and Dark Mode Toggle */}
+        <nav className="mb-4">
+          <div className="stack-h gap-lg items-center">
+            <NavLinks links={[{
+              pathname: '/', title: 'Flowbite HTML'},
+              {pathname: '/flowbitereact', title: 'Flowbite React'},
+              {pathname: '/mui', title: 'MUI'}]} />
+            
+            {/* Dark mode toggle */}
+            <div className="stack-h gap-md items-center ml-auto">
+              <button className="sm" onClick={toggleDarkMode}>
+                {`Switch to ${darkMode ? 'light' : 'dark'} mode`}</button>
 
-        {/* Dark mode toggle */}
-        <div className="stack-h gap-md items-center justify-end">
-          <label>Switch theme: </label>
-          <button className="sm" onClick={toggleDarkMode}>{darkMode ? 'Light' : 'Dark'}</button>
-        </div>
-
-
-        {
-          ['', 'sm', 'lg'].map(size => (
-            <div className="stack-v gap-md w-full items-center" key={`size-${size}`}>
-              <label>Buttons {size ? `(${size})` : ''}</label>
-              <div className="stack-h gap-lg">
-                <button title="Primary Button!" data-tooltip-placement="left" className={`primary ${size}`}>primary</button>
-                <button title="Secondary Button!" data-tooltip-placement="right" className={`secondary ${size}`}>secondary</button>
-                <button className={`text ${size}`}>text</button>
-                <button className={`warning icon-warning ${size}`}>warning</button>
-              </div>
+            {/* <label>Switch theme: </label>
+              <button className="sm" onClick={toggleDarkMode}>{darkMode ? 'Light' : 'Dark'}</button> */}
             </div>
-          ))
-        }
+          </div>
+        </nav>
 
+        <div>
+          <Routes>
+          <Route path="/" element={<FlowbiteHTMLPage />} />
+          <Route path="/flowbitereact" element={<FlowbiteReactPage />} />
+          <Route path="/mui" element={<MUIPage darkMode={darkMode} />} />
+          </Routes>
+        </div>
       </div>
+
+    </Router>
     </div>
+
   );
 }
 

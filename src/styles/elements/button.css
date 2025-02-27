@@ -1,4 +1,4 @@
-html button {
+/* html button {
   @apply text-black px-3 py-1.5 rounded outline outline-2 outline-blue-400 transition-all duration-300;
   @apply dark:text-white dark:outline-white;
   text-transform: uppercase;
@@ -36,4 +36,4 @@ button.warning {
 
 button.text {
   @apply outline-0;
-}
+} */
